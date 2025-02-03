@@ -15,7 +15,7 @@ const Form = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/forms/submit", formData);
+      const response = await axios.post("https://backend-lac-theta.vercel.app/api/forms/submit", formData);
       alert(response.data.message);
       setFormData({ fullName: "", department: "", performanceType: "" });
     } catch (error) {
@@ -25,7 +25,7 @@ const Form = () => {
 
   const handleDownload = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/forms/download", { responseType: "blob" });
+      const response = await axios.get("https://backend-lac-theta.vercel.app/api/forms/download", { responseType: "blob" });
       const url = window.URL.createObjectURL(new Blob([response.data]));
       const link = document.createElement("a");
       link.href = url;
