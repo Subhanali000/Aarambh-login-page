@@ -1,0 +1,218 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+ 
+
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h1,h2 {
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 20px;
+}
+
+
+p {
+  margin: 20px auto;  /* Centers the element horizontally and adds margin at the top */
+  width: auto;  /* Set a fixed width */
+  text-align: center;  /* Centers the text inside the paragraph */
+  color: #7f8c8d;
+  font-size: 18px;
+}
+
+
+/* Button Styles */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.modal-button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-button:hover {
+  background-color: #c0392b;
+}
+
+/* Form Styles */
+form {
+  max-width: 600px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  width: 96%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #131010;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="tel"],
+input[type="number"] {
+  width: 48%;
+  display: inline-block;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+select {
+  width: 100%;
+}
+
+button[type="submit"] {
+  background-color: #27ae60;
+  color: white;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #2ecc71;
+}
+
+/* Error message */
+.error-message {
+  color: #e74c3c;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Admin Section */
+.adminbuttion {
+  position: fixed; /* Fixing the button to the top-right corner */
+  top: 20px;  /* 20px from the top */
+  right: 20px;  /* 20px from the right edge */
+  z-index: 9999; /* Ensure it's above other content */
+}
+
+.admin-section button {
+  background-color: #9b59b6;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto;
+}
+
+.admin-section button:hover {
+  background-color: #8e44ad;
+}
+.download {
+  position: fixed;  /* Fixing the button to the top-right corner */
+  top: 70px;  /* 20px from the top */
+  right: 0px;  /* 20px from the right edge */
+  z-index: 9999;  /* Ensure it's above other content */
+ 
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download button:hover {
+  background-color: #1ae24c;
+  color: #333;
+}
+.dashboard {
+  position: absolute;
+  top: 8px;
+  
+  
+  right: 220px;
+ color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.dashboard button {
+  position: fixed;
+  margin-top: 5px;
+  margin-right: 0px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dashboard button:hover {
+  background-color: #c0392b;
+}
