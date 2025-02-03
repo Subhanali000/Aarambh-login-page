@@ -16,7 +16,7 @@ const RegistrationForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch("http://localhost:5000/api/forms/submit", {
+    await fetch("https://backend-lac-theta.vercel.app/api/forms/submit", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
