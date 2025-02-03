@@ -15,7 +15,7 @@ const AdminLogin = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:5000/api/admin/login", credentials);
+      const response = await axios.post("https://backend-lac-theta.vercel.app/api/admin/login", credentials);
       alert(response.data.message);
     } catch (error) {
       console.error("Error logging in", error);
