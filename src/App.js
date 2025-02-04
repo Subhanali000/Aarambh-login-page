@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import './App.css'; // Import the CSS file
-const API_URL = "https://backend-lac-theta.vercel.app/"; // Your local backend URL
+const API_URL = "https://backend-lac-theta.vercel.app"; // Your local backend URL
 const App = () => {
   // State for form inputs
   const [form, setForm] = useState({
