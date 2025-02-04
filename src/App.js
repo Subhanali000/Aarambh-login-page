@@ -29,7 +29,7 @@ const App = () => {
   useEffect(() => {
     const fetchSubmittedData = async () => {
       try {
-        const response = await axios.get("${API_URL}/api/forms/data");
+        const response = await axios.get(`${API_URL}/api/forms/data`);
         setSubmittedData(response.data); // Update state with the fetched data
       } catch (error) {
         console.error("Error fetching submitted data:", error);
@@ -47,7 +47,7 @@ const App = () => {
   const handleAdminLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("${API_URL}/api/admin/login", { username, password });
+      const response = await axios.post(`${API_URL}/api/admin/login`, { username, password });
   
       if (response.data.success) {
         localStorage.setItem("adminToken", response.data.token); // Store the received token in localStorage
@@ -78,7 +78,7 @@ const App = () => {
     }
   
     try {
-      const response = await axios.post("${API_URL}/api/forms/submit", form);
+      const response = await axios.post(`${API_URL}/api/forms/submit`, form);
       
       console.log("Response from backend:", response); // Log response from the backend
   
@@ -121,7 +121,7 @@ const App = () => {
     }
   
     try {
-      const response = await axios.get("${API_URL}/api/forms/download", {
+      const response = await axios.get(`${API_URL}/api/forms/download`, {
         headers: {
           Authorization: `Bearer ${token}`, // Include the token in the request headers for authentication
         },
