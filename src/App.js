@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 
 import './App.css'; // Import the CSS file
-const API_URL = "http://localhost:5000"; // Your local backend URL
+const API_URL = "https://backend-vbgz.onrender.com/"; // Your local backend URL
 const App = () => {
   // State for form inputs
   const [form, setForm] = useState({
